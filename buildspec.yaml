@@ -5,18 +5,18 @@ phases:
     runtime-versions:
       python: 3.7
     commands:
-      - echo install
+      - ./deployment.sh -b
   pre_build:
     commands:
-      - echo pre build
+      - ./deployment.sh -p
   build:
     commands:
       - echo build
   post_build:
     commands:
-      - echo "another post build 3"
+      - echo post_build
   
 artifacts:
   files:
-    - template.yaml
+    - package-template.json
   name: upbCodepipeline
