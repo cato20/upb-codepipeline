@@ -18,5 +18,5 @@ phases:
   
 artifacts:
   files:
-    - package-template.json
+    - packaged-template.json
   name: upbCodepipeline
