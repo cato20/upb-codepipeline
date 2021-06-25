@@ -116,13 +116,13 @@ Resources:
   TableName:
     Type: AWS::SSM::Parameter
     Properties:
-      Name: "movies-app/dynamoDB/tableName"
+      Name: "/movies-app/dynamoDB/tableName"
       Type: String
       Value: !Ref MoviesTable
   
   TableArn:
     Type: AWS::SSM::Parameter
     Properties:
-      Name: "movies-app/dynamoDB/tableName"
+      Name: "/movies-app/dynamoDB/tableName"
       Type: String
       Value: !GetAtt MoviesTable.Arn
